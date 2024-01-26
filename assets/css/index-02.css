@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+    }
+
+    .welcome-container-mobile {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .update-container {
+        text-align: center;
+        margin-top: 50px;
+        display: none;
+    }
+
+    .button-animation {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .welcome-container-desktop {
+        display: none;
+    }
+
+    img {
+        margin-top: 8%;
+        max-width: 90%;
+    }
+
+    .title {
+        color: #5E17EB;
+        margin-top: 30px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+    }
+
+    .slogan {
+        color: #666;
+        margin-top: -20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .btn-login {
+        background-color: #5E17EB;
+        border: 2px solid #5E17EB;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 80%;
+        height: 20%;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+
+    .download-animation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent 50%, #5E17EB 50%), linear-gradient(90deg, #fff 50%, transparent 50%);
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        transition: background-position 0.3s;
+        opacity: 0;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    @keyframes downloadAnimation {
+        0% {
+            background-position: 200% 0;
+        }
+
+        100% {
+            background-position: -200% 0;
+        }
+    }
+
+    .button-animation.downloading .download-animation {
+        opacity: 1;
+        animation: downloadAnimation 2s linear infinite;
+    }
+
+    .button-animation.downloading {
+        cursor: not-allowed;
+        opacity: 0.7;
+    }
+
+    .button-animation.downloading:hover .download-animation {
+        background-position: -100% 0;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 601px) {
+    .welcome-container-mobile {
+        display: none;
+    }
+
+    .welcome-container-desktop {
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .update-container {
+        display: none;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+    }
+
+    img {
+        margin-top: 5%;
+        max-width: 20%;
+    }
+
+    .title {
+        color: #5E17EB;
+        font-family: "Poppins", sans-serif;
+        font-size: 44px;
+        margin-top: -20px;
+        font-weight: 700;
+    }
+
+    .slogan {
+        color: #666;
+        margin-top: -30px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    button {
+        background-color: #5E17EB;
+        border: 2px solid #5E17EB;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 30%;
+        height: 30%;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+}

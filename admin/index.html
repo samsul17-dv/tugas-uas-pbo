@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@800&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sidebar Profil dan Menu Admin</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="profile">
+            <img src="../assets/images/kobeni.gif" alt="Profil Picture">
+            <h2>Samsul Muarif</h2>
+        </div>
+        <ul class="admin-menu">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Pengguna</a></li>
+            <li><a href="#">Produk</a></li>
+            <li><a href="#">Pengaturan</a></li>
+            <li><a href="#" style="margin-top: 180%;">Keluar</a></li>
+        </ul>
+    </div>
+
+    <!-- ... Kode HTML sebelumnya ... -->
+
+<div class="content">
+    <!-- Konten halaman utama akan ditempatkan di sini -->
+    <div class="card-container">
+        <div class="card">
+            <h1 id="jumlahMahasiswa"></h1>
+            <p class="keterangan">Jumlah mahasiswa yang terdaftar di database.</p>
+        </div>
+
+        <div class="card">
+            <h1 id="jumlahBuku"></h1>
+            <p class="keterangan">Jumlah buku yang tersedia di perpustakaan.</p>
+        </div>
+
+        <div class="card">
+            <h1 id="jumlahBukuDipinjam"></h1>
+            <p class="keterangan">Jumlah buku yang sedang dipinjam oleh mahasiswa.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ... Kode HTML setelahnya ... -->
+
+
+
+    <script>
+        // Anda perlu mendapatkan jumlah mahasiswa dari server atau database, dan kemudian menggantikan nilai #jumlahMahasiswa
+        // Misalnya, jika Anda menggunakan PHP, Anda dapat menggunakan AJAX untuk mengambil data dari server.
+    
+        // Contoh hardcoded nilai (gantilah dengan nilai sebenarnya dari database)
+        var jumlahMahasiswa = 150;
+    
+        // Menetapkan nilai ke elemen HTML
+        document.getElementById('jumlahMahasiswa').innerText = jumlahMahasiswa;
+    </script>
+
+    
+
+    
+
+</body>
+
+</html>

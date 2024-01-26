@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kanit&family=Poppins:wght@400;700&display=swap');
+
+.new-arrival {
+    margin-top: 20px;
+}
+
+.new-arrival-title {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    color: #5E17EB;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-slider {
+    display: flex;
+    overflow-x: auto;
+}
+
+.card {
+    flex: 0 0 150px;
+    margin-right: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.card img {
+    margin-top: 20px;
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-text {
+    margin: 5px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.card-judul {
+    margin: 5px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    color: #5E17EB;
+}

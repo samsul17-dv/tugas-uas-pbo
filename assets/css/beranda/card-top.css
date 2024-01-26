@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kanit&family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .beranda-desktop {
+        display: none;
+    }
+
+    .greetings-card {
+        width: 400px;
+        height: 130px;
+        margin: 20px auto;
+        border-radius: 8px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .card-image {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-top: -60%;
+        margin-right: 5%;
+    }
+
+    .card-text {
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .greetings-title,
+    .sub-title {
+        margin: 0;
+    }
+
+    .sub-title {
+        margin-top: 5px;
+        color: #5E17EB;
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+}
+
+@media only screen and (min-width: 601px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .container-beranda-mobile {
+        display: none;
+    }
+
+    .beranda-desktop nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        color: white;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo img {
+        width: 50px;
+        border-radius: 50px;
+    }
+
+    .menu-desktop a {
+        text-decoration: none;
+        color: #5E17EB;
+        margin-right: 20px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+    }
+
+    .language-select select {
+        padding: 5px;
+    }
+}

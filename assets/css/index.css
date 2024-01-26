@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .welcome-container-mobile {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .welcome-container-desktop {
+        display: none;
+    }
+
+    img {
+        margin-top: 8%;
+        max-width: 90%;
+    }
+
+    .title {
+        color: #5E17EB;
+        margin-top: 30px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+    }
+
+    .slogan {
+        color: #666;
+        margin-top: -20px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    button {
+        background-color: #5E17EB;
+        border: 2px solid #5E17EB;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 80%;
+        height: 20%;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+        font-weight: 700;
+    }
+
+    .version {
+        color: #000;
+        margin-top: 30px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        opacity: 0.30;
+    }
+
+    .studio {
+        color: #000;
+        margin-top: -20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        opacity: 0.30;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .welcome-container-mobile {
+        display: none;
+    }
+
+    .welcome-container-desktop {
+        display: block;
+    }
+
+
+    .welcome-container-desktop {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    img {
+        margin-top: 5%;
+        max-width: 20%;
+    }
+
+    .title {
+        color: #5E17EB;
+        font-family: "Poppins", sans-serif;
+        font-size: 44px;
+        margin-top: -20px;
+        font-weight: 700;
+    }
+
+    .slogan {
+        color: #666;
+        margin-top: -30px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    button {
+        background-color: #5E17EB;
+        border: 2px solid #5E17EB;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 30%;
+        height: 30%;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #5E17EB;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .login-container-desktop {
+        display: none;
+    }
+
+    .back {
+        position: absolute;
+        top: 35px;
+        left: 28px;
+        transform: translateY(-50%);
+        color: #555;
+    }
+
+    img {
+        max-width: 90%;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .login-card {
+        background-color: #ffffff93;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.335);
+        padding: 20px;
+        width: auto;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        animation: slide-up 1s ease-in-out;
+    }
+
+    .title {
+        font-family: "Poppins", sans-serif;
+        color: #5E17EB;
+        margin-top: 10px;
+    }
+
+    .message {
+        font-family: "Poppins", sans-serif;
+        color: #5E17EB;
+        font-size: 100px;
+        margin-top: 100px;
+        font-weight: 700;
+    }
+
+
+
+    .input-container {
+        position: relative;
+        margin-bottom: 10px;
+        animation: slide-up 1s ease-in-out 0.2s forwards;
+    }
+
+    .input-container input {
+        width: 90%;
+        height: 40px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: none;
+        background-color: #ffffff67;
+        border-radius: 20px;
+        margin-top: 5px;
+        padding-left: 40px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+
+    .input-container .bx {
+        position: absolute;
+        top: 25px;
+        left: 28px;
+        transform: translateY(-50%);
+        color: #555;
+    }
+
+    .login-btn {
+        background-color: #5E17EB;
+        color: #fff;
+        padding: 10px 20px;
+        width: 90%;
+        font-size: 16px;
+        margin-top: 5px;
+        padding: 10px 20px;
+        border: 1px solid #5E17EB;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+        animation: slide-up 1s ease-in-out 0.4s forwards;
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    .login-container-mobile {
+        display: none;
+    }
+
+    .login-container-desktop {
+        text-align: center;
+    }
+
+    .login-card {
+        background-color: #ffffff93;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.335);
+        padding: 20px;
+        width: 320px;
+        height: 350px;
+        margin-top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        animation: slide-up 1s ease-in-out;
+    }
+
+    .title {
+        font-family: "Poppins", sans-serif;
+        color: #5E17EB;
+        margin-top: 30px;
+    }
+
+    .input-container .bx {
+        position: absolute;
+        top: 25px;
+        left: 28px;
+        transform: translateY(-50%);
+    }
+
+    .input-container {
+        position: relative;
+        margin-bottom: 10px;
+        animation: slide-up 1s ease-in-out 0.2s forwards;
+    }
+
+    .input-container input {
+        width: 90%;
+        height: 40px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: none;
+        background-color: #ffffff67;
+        border-radius: 20px;
+        margin-top: 5px;
+        padding-left: 40px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+
+    .login-btn {
+        background-color: #5E17EB;
+        color: #fff;
+        padding: 10px 20px;
+        width: 90%;
+        font-size: 16px;
+        margin-top: 5px;
+        padding: 10px 20px;
+        border: 1px solid #5E17EB;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+        animation: slide-up 1s ease-in-out 0.4s forwards;
+    }
+
+    .back {
+        position: absolute;
+        top: 35px;
+        left: 28px;
+        transform: translateY(-50%);
+        color: #555;
+    }
+
+    @keyframes slide-up {
+        from {
+            transform: translateY(100%);
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+}
